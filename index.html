@@ -11,20 +11,20 @@
         <div class="row">
         
             <div class="topnav">
-                <input class="button" type="button" id="btn" value="Step (1)" onclick="increment()">
-                <input class="button" type="button" id="bigBtn" value="Big Step (20)" onclick="bigStep()">
-                <input class="button" type="button" id="predatorBtn" value="Add Predators" onclick="predator()">
-        
+                <input class="button" type="button" id="addHeatBtn" value="Add Heat" onclick="addHeat()">
+                <input class="button" type="button" id="subtractHeatBtn" value="Subtract Heat" onclick="subtractHeat()">
+                <input class="button" type="button" id="addPressureBtn" value="Add pressure" onclick="addPressure()">
+                <input class="button" type="button" id="subtractPressureBtn" value="Subtract pressure" onclick="subtractPressure()">
             </div>
-        
-            <input class="boxes" type="text" id='output'>
+            
+            <div class="boxWrapper">
+                <input class="boxes" type="text" id='heatOutput'>
+                <input class="boxes" type="text" id='pressureOutput'>
+                <input class="boxes" type="text" id='rockOutput'>
+            </div>
         
         </div>
 
-        
-
-
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>

@@ -15,7 +15,7 @@ body {
 	border-radius: 10px;
 }
 
-/* Style the topnav links */
+/* Style the topnav buttons */
 .topnav .button {
 	float: left;
 	display: block;
@@ -25,6 +25,15 @@ body {
 	text-decoration: none;
 	background-color: rgb(38, 42, 43);
 	border-style: none;
+}
+
+#makeRockBtn {
+	background-color: green;
+}
+
+#makeRockBtn:hover {
+	background-color: #ddd;
+	color: black;
 }
 
 /* Change color on hover */
@@ -37,8 +46,8 @@ body {
 	text-align: center;
 	text-decoration: none;
 	border-style: none;
-	width: 50%;
-	height: 36px;
+	width: 47%;
+	height: 50px;
 	font-size: 30px;
 	background-color: rgb(185, 185, 185);
 	border-radius: 10px;
