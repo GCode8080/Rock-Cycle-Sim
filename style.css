@@ -54,6 +54,10 @@ body {
 	margin: 20px;
 }
 
+.instructions p {
+	color: white;
+}
+
 .row:after {
 	content: "";
 	display: table;

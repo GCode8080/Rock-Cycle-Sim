@@ -15,11 +15,20 @@
                 <input class="button" type="button" id="subtractHeatBtn" value="Subtract Heat" onclick="subtractHeat()">
                 <input class="button" type="button" id="addPressureBtn" value="Add pressure" onclick="addPressure()">
                 <input class="button" type="button" id="subtractPressureBtn" value="Subtract pressure" onclick="subtractPressure()">
+                <input class="button" type="button" id="addTimeBtn" value="Add time" onclick="addTime()">
+                <input class="button" type="button" id="subtractTimeBtn" value="Subtract time" onclick="subtractTime()">
+            </div>
+
+            <div class="instructions">
+                <p>
+                    Instructions: <br><br> Lava: set heat to 1000 <br> Igneous Rock: subtract heat after making lava to make igneous rock <br> Metamorphic Rock: set pressure to 300 and heat to 200 <br> Sedimentary Rock: set time to 200
+                </p>
             </div>
             
             <div class="boxWrapper">
                 <input class="boxes" type="text" id='heatOutput'>
                 <input class="boxes" type="text" id='pressureOutput'>
+                <input class="boxes" type="text" id='timeOutput'>
                 <input class="boxes" type="text" id='rockOutput'>
             </div>
         

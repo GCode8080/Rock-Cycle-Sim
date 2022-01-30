@@ -1,25 +1,32 @@
 //---------------------variables-------------------------
 let heat = 0;
 let pressure = 0;
-let baseRock;
-let rockType;
+let rockType = "Stone";
+let time = 0;
 
 //---------------------Stuff-------------------------
-document.getElementById("heatOutput").value = " ";
-document.getElementById("pressureOutput").value = " ";
+document.getElementById("heatOutput").value = "0 °C";
+document.getElementById("pressureOutput").value = "0 MPa";
 document.getElementById("rockOutput").value = " ";
+document.getElementById("timeOutput").value = "0 Years";
 
 //---------------------Functions-------------------------
 
 function makeRock() {
+
+
     if (heat >= 1000) {
         rockType = "Lava";
         
     } else if (heat >= 200 && pressure >= 300 && heat <= 900) {
         rockType = "Metamorphic Rock"
 
-    } else {
-        rockType = "Stone";
+    } else if (heat >= 200 && heat <= 900 && document.getElementById("rockOutput").value == "Lava") {
+        rockType = "Igneous Rock"
+
+    } else if (time >= 200) {
+        rockType = "Sedimentary Rock"
+
     }
 
     
@@ -50,5 +57,17 @@ function addPressure() {
 function subtractPressure() {
     pressure = pressure - 100;
     document.getElementById("pressureOutput").value = pressure + " MPa";
+    makeRock();
+}
+
+function addTime() {
+    time = time + 100;
+    document.getElementById("timeOutput").value = time + " Years";
+    makeRock();
+}
+
+function subtractTime() {
+    time = time - 100;
+    document.getElementById("timeOutput").value = time + " Years";
     makeRock();
 }
