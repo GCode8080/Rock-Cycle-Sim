@@ -13,8 +13,6 @@ document.getElementById("timeOutput").value = "0 Years";
 //---------------------Functions-------------------------
 
 function makeRock() {
-
-
     if (heat >= 1000) {
         rockType = "Lava";
         
@@ -28,10 +26,6 @@ function makeRock() {
         rockType = "Sedimentary Rock"
 
     }
-
-    
-
-
     document.getElementById("rockOutput").value = rockType;
 }
 
@@ -68,6 +62,9 @@ function addTime() {
 
 function subtractTime() {
     time = time - 100;
+    if (time < 0) {
+        time = 0;
+    }
     document.getElementById("timeOutput").value = time + " Years";
     makeRock();
 }
